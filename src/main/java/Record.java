@@ -69,7 +69,7 @@ public class Record implements Comparable<Record>{
         if(newRecord.size() != size())
             return false;
         for(int i=0; i<size(); i++) {
-            if (get(i) != newRecord.get(i))
+            if (!get(i).equals(newRecord.get(i)))
                 return false;
         }
         return true;
