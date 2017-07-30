@@ -41,13 +41,13 @@ public class FindMismatch {
                 j += 1;
             }
             if(i >= table1.size()){
-                for(int k=i; k<table2.size(); k++){
+                for(int k=j; k<table2.size(); k++){
                     result2.add(table2.get(k));
                 }
                 loop = false;
             }
             if(j >= table2.size()){
-                for(int k=j; k<table1.size(); k++){
+                for(int k=i; k<table1.size(); k++){
                     result1.add(table1.get(k));
                 }
                 loop = false;
